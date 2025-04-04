@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.logo img {
+    width: 60px; 
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* Posición */
+.container {
+    display: flex;
+    padding: 20px;
+}
+/* Categorías */
+.categories {
+    width: 20%;
+    background: #333; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    text-align: left; /* Alineación izquierda */
+    color: white;
+}
+.categories h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+}
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+.categories ul li {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Para el fondo semi-transparente */
+    border-radius: 5px;
+}
+.categories ul ul {
+    margin-top: 5px;
+    padding-left: 15px;
+}
+.categories ul ul li {
+    font-size: 14px;
+    font-weight: normal;
+    background: none;
+    padding: 5px 0;
+}
+/* Productos*/
+.products {
+    width: 80%;
+    padding: 20px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.price {
+    font-weight: bold;
+    color: green;
+}
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+/* Para la tabla de beneficio */
+.benefits table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.benefits th, .benefits td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+.benefits th {
+    background: #333;
+    color: white;
+}
+/* Footer */
+.footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
