@@ -34,18 +34,17 @@ h1 {
 }
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-nav ul li {
-    margin: 0 15px;
-}
+
 nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 .team-container {
     display: flex;
     justify-content: center;
@@ -101,3 +100,54 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+/* ===================== MEDIA QUERIES ===================== */
+  
+  /* Móviles pequeños (< 480px) */
+  @media screen and (max-width: 479px) {
+    .checkbox-group {
+      flex-direction: column;
+    }
+  
+    .form-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  
+    .site-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Móviles grandes (480px - 768px) */
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .checkbox-group {
+      flex-direction: column;
+    }
+  
+    .form-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo img {
+      height: 45px;
+    }
+  }
+  
+  /* Tablets (768px - 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .checkbox-group {
+      justify-content: space-between;
+    }
+  }
+  
+  /* Computadoras de escritorio (> 1024px) */
+  @media screen and (min-width: 1024px) {
+    .checkbox-group {
+      justify-content: space-between;
+    }
+  }

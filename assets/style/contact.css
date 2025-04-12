@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  /* Encabezado */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* se coloca verticalmente */
+  align-items: center;
+  text-align: center;
+  position: relative; /* posiciono el logo */
+}
+.logo {
+  position: absolute;
+  left: 20px; /* Coloco el logo a la izquierda */
+  top: 50%;
+  transform: translateY(-50%); /* Centro verticalmente */
+}
+.logo img {
+  height: 80px;
+  width: auto;
+}
+  
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+} 
+.nav a {
+    color: white;
+    text-decoration: none;
+   
+}
+.main-contact {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+  
+.main-contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+  
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+  
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+  
+button {
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #555;
+}
+  
+.map-placeholder {
+    margin-top: 30px;
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+  
+  /* ================ MEDIA QUERIES ================ */
+  
+  /* Móviles pequeños (< 480px) */
+  @media screen and (max-width: 479px) {
+    .checkbox-group {
+      flex-direction: column;
+    }
+  
+    .form-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  
+    .site-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Móviles grandes (480px - 768px) */
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .checkbox-group {
+      flex-direction: column;
+    }
+  
+    .form-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo img {
+      height: 45px;
+    }
+  }
+  
+  /* Tablets (768px - 1024px) */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .checkbox-group {
+      justify-content: space-between;
+    }
+  }
+  
+  /* Computadoras de escritorio (> 1024px) */
+  @media screen and (min-width: 1024px) {
+    .checkbox-group {
+      justify-content: space-between;
+    }
+  }
+  

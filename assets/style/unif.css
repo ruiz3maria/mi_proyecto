@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+  }
+  
+  header {
+    background-color: #2c2c2c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    flex-wrap: wrap;
+  }
+  
+  header .logo img {
+    height: 50px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #444;
+    border-radius: 4px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .categories {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .categories h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .categories ul li {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .categories ul ul li {
+    margin-left: 15px;
+    font-weight: normal;
+  }
+  
+  .products {
+    width: 80%;
+  }
+  
+  .products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product .price {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .product button {
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #444;
+  }
+  
+  .benefits {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .benefits h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .benefits table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .benefits th, .benefits td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .benefits th {
+    background-color: #2c2c2c;
+    color: white;
+  }
+  
+  .footer {
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* About Page */
+  .about {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    margin-bottom: 20px;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .values {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
